@@ -112,11 +112,16 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.AJAX.Acts.Post,
 		C3.Plugins.Browser.Acts.ConsoleLog,
 		C3.Plugins.System.Cnds.ForEach,
+		C3.Plugins.TextBox.Acts.SetCSSStyle,
+		C3.Plugins.Button.Acts.SetCSSStyle,
 		C3.Plugins.Button.Cnds.OnClicked,
 		C3.Plugins.TextBox.Exps.Text,
 		C3.Plugins.AJAX.Cnds.OnComplete,
 		C3.Plugins.Button.Acts.SetEnabled,
-		C3.Plugins.System.Exps.find
+		C3.Plugins.TextBox.Acts.SetText,
+		C3.Plugins.System.Exps.left,
+		C3.Plugins.System.Exps.len,
+		C3.Plugins.System.Exps.right
 	];
 };
 self.C3_JsPropNameTable = [
@@ -212,6 +217,10 @@ self.C3_JsPropNameTable = [
 	{Submit: 0},
 	{StarID: 0},
 	{Star: 0},
+	{Text2: 0},
+	{Text4: 0},
+	{Submit_2: 0},
+	{Submit_user: 0},
 	{TFamily: 0},
 	{currentTime: 0},
 	{Email: 0},
@@ -219,7 +228,6 @@ self.C3_JsPropNameTable = [
 	{PhoneNumber: 0},
 	{MongoId: 0},
 	{showCountdown: 0},
-	{FinalScore: 0},
 	{SelectedRating: 0},
 	{countdownTime: 0},
 	{Form: 0},
@@ -305,5 +313,9 @@ self.InstanceType = {
 	Phone: class extends self.ITextInputInstance {},
 	Submit: class extends self.IButtonInstance {},
 	Star: class extends self.ISpriteInstance {},
+	Text2: class extends self.ITextInstance {},
+	Text4: class extends self.ITextInstance {},
+	Submit_2: class extends self.ISpriteInstance {},
+	Submit_user: class extends self.ITextInstance {},
 	TFamily: class extends self.ISpriteInstance {}
 }
